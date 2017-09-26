@@ -1,0 +1,5 @@
+.search_header {display:none;position:fixed;right:60px;top:55px;width:230px;height:40px;z-index:9999999;margin:5px;overflow:visible;}
+.search_header fieldset {}
+.search_header #keyword  { width:170px; height:20px; padding:10px; border:0; line-height:20px; font-size:16px; color:#fff;background:rgba(0,0,0,1);}
+.search_header fieldset a {width:40px;padding:11px 0;line-height:18px;font-size:18px;text-align:center;background:rgba(0,0,0,1);margin:0px;vertical-align:middle;color:#fff;float:right;}
+.search_header .close_btn {position:absolute;left:0px;top:-20px;font-size:14px;}

@@ -1,0 +1,4 @@
+#mosen_join { position:relative}
+#mosen_join .mosen_join { position:absolute; width:55px; height:27px; left:50%;margin-left:-27px; top:29px;
+    background:url('/web/season2_skin/skin1/images/moveing_ico.png') no-repeat;  background-size:55px;
+    font-size:10px; font-weight:bold; color:#fff; line-height:30px; letter-spacing:0.03em; text-align:center;}

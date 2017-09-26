@@ -1,0 +1,10 @@
+#popup { width:600px; }
+.xans-calendar-write th {width:110px;}
+.xans-calendar-write td input ,
+.xans-calendar-write td textarea { padding:2px 2px 2px 4px; width:480px; height:23px; border:1px solid #000; color:#202020; }
+.xans-calendar-write td select {padding-right:25px;}
+.xans-calendar-write td select {margin:3px 3px 3px 0;}
+.xans-calendar-write td select:last-child {margin-right:0;}
+.xans-calendar-write td input#date { width:209px; text-align:center; }
+.xans-calendar-write td input#confirm {   margin-bottom:3px;}
+.xans-calendar-write td textarea { height:80px; }

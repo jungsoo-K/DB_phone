@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cartdao" class="www.DBphone.cart.CartDAO" p:mybatis-ref="sqlSession" />
+	<bean id="commdao" class="www.DBphone.comment.CommentDAO" p:mybatis-ref="sqlSession" />
+	<bean id="customdao" class="www.DBphone.custom.CustomDAO" p:mybatis-ref="sqlSession" />
+	<bean id="memdao" class="www.DBphone.member.MemberDAO" p:mybatis-ref="sqlSession" />
+	<bean id="nodao" class="www.DBphone.notice.NoticeDAO" p:mybatis-ref="sqlSession" />
+	<bean id="orderdao" class="www.DBphone.order.OrderDAO" p:mybatis-ref="sqlSession" />
+	<bean id="pQnAdao" class="www.DBphone.prodQnA.prodQnADAO" p:mybatis-ref="sqlSession" />
+	<bean id="proddao" class="www.DBphone.product.ProductDAO" p:mybatis-ref="sqlSession" />
+	<bean id="QnAdao" class="www.DBphone.QnA.QnADAO" p:mybatis-ref="sqlSession" />
+	<bean id="rdao" class="www.DBphone.review.ReviewDAO" p:mybatis-ref="sqlSession" />
+
+	<!-- Database Connection Settings -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		p:driverClassName="org.gjt.mm.mysql.Driver"
+		p:url="jdbc:mysql://172.16.3.29:3306/DB_phone?useUnicode=true&amp;characterEncoding=euckr"
+		p:username="root"
+		p:password="1234"
+		p:maxActive="2"
+		p:maxIdle="1" />
+		
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 아래부분은 매핑할 xml파일이 있는 패키지경로를 설정한다. -->
+		<property name="typeAliasesPackage" value="www.DBphone" />
+		<property name="mapperLocations" value="classpath:mybatis/*.xml" />
+	</bean>
+
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+
+</beans>

@@ -1,0 +1,8 @@
+#mypage {width:100%;margin:20px auto;font-size:11px;}
+#mypage ul {font-size:0; line-height:0; margin:0 auto;width:550px;}
+#mypage li { }
+#mypage li h2 {width:150px;font-weight:400;text-align:left;display:inline-block;font-size:11px;line-height:12px;margin-right:50px;height:12px;border-right:1px solid #000;}
+#mypage li a {display:block;  padding:3% 10%;width:80%;border:1px solid #000;margin:10px;font-size:11px;line-height:22px;background:#fff;}
+#mypage li a:hover {background:#000;color:#fff;}
+#mypage li a:hover h2 {border-right:1px solid #fff;}
+#mypage .fa {margin-right:15px;}

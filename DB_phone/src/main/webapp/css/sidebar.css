@@ -1,0 +1,54 @@
+
+/*
+.side_order_dcInfo { position:relative; margin:0px auto 40px; padding:10px 5px 10px 105px; border:0px solid #d2d2d2; color:#353535; line-height:20px; width:400px;}
+.side_order_dcInfo h3 { position:absolute; left:0; top:0; width:105px; height:100%; color:#353535; font-size:12px; text-align:center; }
+.side_order_dcInfo h3 strong { display:table; width:105px; height:100%; }
+.side_order_dcInfo h3 strong span { display:table-cell; vertical-align:middle; }
+.side_order_dcInfo .info { padding:0 0 0 15px; border-left:1px solid #e8e8e8; }
+.side_order_dcInfo .info .member {}
+.side_order_dcInfo .info .mileage { margin:6px 0 6px; padding:10px 0 ; border-top:1px solid #e8e8e8; *zoom:1;border-bottom:1px solid #e8e8e8;  }
+.side_order_dcInfo .info .mileage:after { content:""; display:block; clear:both; }
+.side_order_dcInfo .info .displaynone + .mileage { margin:0; padding:0; border:0; }
+.side_order_dcInfo .info .mileage li { float:left; margin:0 40px 0 0; }
+.side_order_dcInfo .info .mileage li a { text-decoration:none; }
+.side_order_dcInfo .info .mileage li strong { color:#00b0d6; }
+
+.side_order_dcInfo .info .logout { margin:0px 0 6px; padding:0px 0 10px ;  *zoom:1;border-bottom:1px solid #e8e8e8;  }
+.side_order_dcInfo .info .logout:after { content:""; display:block; clear:both; }
+.side_order_dcInfo .info .logout li { float:left; margin:0 0px 0 0;  color:#00b0d6;}
+.side_order_dcInfo .info .logout li a { text-decoration:none; }
+.side_order_dcInfo .info .logout li strong { color:#00b0d6; }
+
+.side_order_dcInfo .info .dcinfo {  }
+.side_order_dcInfo .info .dcinfo:after { content:""; display:block; clear:both; }
+.side_order_dcInfo .info .dcinfo li { float:left; margin:0 0px 0 0;width:100%; }
+.side_order_dcInfo .info .dcinfo li strong { color:#000; }
+
+.side_infobox { position:relative; margin:0px auto 40px; padding:10px 5px 10px 105px; border:1px solid #d2d2d2; color:#353535; line-height:1.5; width:400px;background:#fff;border-radius:0px;border-top:2px solid #333;}
+.side_infobox h3 { position:absolute; left:0; top:0; width:105px; height:100%; color:#353535; font-size:12px; text-align:center; }
+.side_infobox h3 strong { display:table; width:105px; height:100%; }
+.side_infobox h3 strong span { display:table-cell; vertical-align:middle; }
+.side_infobox .info { padding:0 0 0 15px; border-left:1px solid #e8e8e8; }
+.side_infobox .info li {padding:7px 0;border-top:1px solid #e8e8e8;}
+.side_infobox .info .first {border-top:0px;}
+.side_infobox .info strong { color:#000; }
+
+.side_infobox2 { position:relative; margin:0px auto 40px; padding:10px 5px 10px 5px; border:1px solid #d2d2d2; color:#353535; line-height:1.5; width:500px;background:#fff;border-radius:0px;border-top:2px solid #333;}
+.side_infobox2 .info { padding:0 0 0 0px; overflow:hidden; }
+.side_infobox2 .info li {padding:7px 0;width:25%;float:left;text-align:center;}
+.side_infobox2 .info li a {width:100%;border-left:1px solid #e8e8e8;display:block;}
+.side_infobox2 .info .first {border-left:0px;}
+.side_infobox2 .info strong { color:#000;font-size:22px; line-height:30px;}
+.side_infobox2 .info .ea {color:#555;font-size:12px;}
+
+.side_infobox3 { position:relative; margin:0px auto 40px;color:#353535; line-height:1.5; width:510px;}
+.side_infobox3 h2 {margin:0 0 10px;font-size:12px;}
+.side_infobox3 .info { padding:0 0 0 0px; overflow:hidden; }
+.side_infobox3 .info li {padding:15px 0;width:92px;float:left;text-align:center;margin-left:10px;margin-bottom:10px;border:1px solid #d2d2d2;border-top:2px solid #333;background:#fff;}
+.side_infobox3 .info li a {width:100%;border-left:0px solid #e8e8e8;display:block;font-size:12px;}
+.side_infobox3 .info .first {margin-left:0px;}
+.side_infobox3 .info li img {height:30px;line-height:30px;margin-bottom:5px;}
+
+#side_off {position:absolute;top:0px;left:660px;z-index:999999999999999999999999;background:#fff;}
+#side_off img {width:14px;border:1px solid #e9e9e9;padding:5px;}
+*/

@@ -1,0 +1,39 @@
+.xans-member-login { text-transform:uppercase; letter-spacing:1px;}
+.xans-member-login .login {  width:300px; margin:50px auto; border:1px solid #eee; padding:40px ; border-top:2px solid #000;}
+.xans-member-login .login h3 { margin:0 0 20px; font-weight:700; font-size:10px;  letter-spacing:3px;border-bottom:1px solid #eee; color:#aaa; text-align:left;padding:0 0px 20px ;}
+
+.xans-member-login .login .id,
+.xans-member-login .login .password { font-size:10px;  display:block;  border:1px solid #eee; width:280px; padding:10px; color:#000; }
+.xans-member-login .login .id:hover,
+.xans-member-login .login .password:hover { border:1px solid #eee; background:#eee;}
+
+.xans-member-login .login .password { margin-top:10px; }
+.xans-member-login .login .id span,
+.xans-member-login .login .password span { width:80px; display:inline-block; *display:inline; *zoom:1; vertical-align:middle; }
+.xans-member-login .login .id input,
+.xans-member-login .login .password input { width:180px; height:18px; line-height:18px; border:0; font-size:14px;color:#000;background:transparent;}
+
+.xans-member-login .login .btn_ok { display:block; background:#000; color:#fff; width:300px; height:55px; line-height:55px; text-align:center; letter-spacing:5px; font-size:12px; margin:10px 0 10px; }
+.xans-member-login .login .btn_ok:hover { background:#f9f9f9; color:#000;}
+
+.xans-member-login .login .btn_ok_grid1 { display:block;color:#fff; width:300px; height:35px; line-height:35px; text-align:center; letter-spacing:2px; font-size:12px; margin:10px 0 10px; }
+.xans-member-login .login .btn_ok_grid1:hover { background:#f9f9f9; color:#000;}
+
+
+.xans-member-login .login .security { color:#aaa; font-size:11px;margin-bottom:20px; }
+.xans-member-login .login .security input { width:13px; height:13px; vertical-align:-3px; *vertical-align:2px; margin:0 3px 0 0; }
+.xans-member-login .login .security label { margin:0 6px 0 0; }
+.xans-member-login .login .security img { vertical-align:middle;   filter:gray; filter:url(filters.svg#grayscale); -webkit-filter: grayscale(1); opacity:0.6; filter:alpha(opacity=60); }
+
+.xans-member-login .login .etc { font-size:0;line-height:0;}
+.xans-member-login .login .etc a {display:inline-block; background:#fff; border:1px solid #eee;color:#000; width:143px; height:35px; line-height:35px; text-align:center; letter-spacing:0px; font-size:10px; margin:10px 0 0px; letter-spacing:5px;}
+.xans-member-login .login .etc a:hover { color:#000;background:#f9f9f9;  border:1px solid #eee;}
+.xans-member-login .login .etc .join {background:#ddd;color:#000;height:45px;line-height:45px;font-size:12px;width:298px;}
+.xans-member-login .login .etc .join:hover {background:#f9f9f9;color:#000;}
+
+
+.xans-member-login .noMember a { width:300px; margin:50px auto; border:1px solid #eee; padding:40px; text-transform:uppercase;  font-size:10px; display:block; text-align:center; letter-spacing:1px; color:#000;
+    line-height:20px; border-top:2px solid #000; }
+.xans-member-login .noMember a span { color:#333; letter-spacing:1px; font-size:12px; display:block;  }
+.xans-member-login .noMember a:hover { background:#f9f9f9; }
+

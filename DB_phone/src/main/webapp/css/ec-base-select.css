@@ -1,0 +1,4 @@
+input,select,textarea { font:12px Roboto, Nanum Gothic,Arial,verdana,sans-serif;color:#000; vertical-align:middle;border:1px solid #000; }
+select { height:29px; font-size:12px; }
+select { padding:0 6px;border:1px solid #000;color:#000;  background: url('/web/season2_skin/skin1/images/select_icon.png') no-repeat 95% 50%;  background-size:15px;-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;}
+select::-ms-expand { /* for IE 11 */display: none;}

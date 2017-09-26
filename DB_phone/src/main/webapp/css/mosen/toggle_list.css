@@ -1,0 +1,4 @@
+.toggle_list {text-align:right;margin:0 auto 20px;}
+.toggle_list ul {font-size:0;line-height:0;}
+.toggle_list ul li {display:inline-block;margin:5px;}
+.toggle_list ul li:last-child {margin-right:1%;}

@@ -1,0 +1,6 @@
+.xans-myshop-couponlist .title { overflow:hidden; margin:40px 0 10px 0px; *zoom:1; }
+.xans-myshop-couponlist .title h3 { float:left; color:#000; font-size:12px; }
+.xans-myshop-couponlist .title p { float:right; color:#000; }
+.xans-myshop-couponlist td.payment,
+.xans-myshop-couponlist td.sale,
+.xans-myshop-couponlist td.mileage { color:#000; }

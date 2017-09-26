@@ -1,0 +1,26 @@
+/* 공통 css */
+.ec-base-tooltip { display:none; z-index:2; position:absolute; top:24px; padding:15px; border:1px solid #000; background:#fff; }
+.ec-base-tooltip h3 { margin:0 0 8px; padding:0 10px; font-size:12px; border-bottom:0; background:url("http://img.echosting.cafe24.com/skin/base/common/ico_layer_title.gif") no-repeat 0 50%; }
+.ec-base-tooltip h3 + p { margin:0 5px 8px; }
+.ec-base-tooltip h4 { margin:15px 10px 8px 5px; font-size:12px; }
+.ec-base-tooltip h4:before { display:inline-block; content:""; margin:0 5px 0 0; width:3px; height:3px; background:#666; vertical-align:middle; }
+.ec-base-tooltip .btnClose { position:absolute; right:14px; top:14px; }
+.ec-base-tooltip .edge { z-index:20; position:absolute; left:50%; top:-5px; display:block; margin:0 0 0 -5px; width:9px; height:6px; background:url("http://img.echosting.cafe24.com/skin/base/common/ico_option_arrow.gif") no-repeat 0 0; }
+.ec-base-tooltip table th,
+.ec-base-tooltip table td { padding:5px 15px 5px 5px; border:1px solid #000; line-height:1.5em; }
+.ec-base-tooltip table th { padding-right:0; background:#fff; }
+.ec-base-tooltip table thead th { text-align:center; }
+.ec-base-tooltip table tbody th { text-align:left; }
+.ec-base-tooltip table .left { text-align:left; }
+.ec-base-tooltip table .center { text-align:center; }
+.ec-base-tooltip table .right { text-align:right; }
+.ec-base-tooltip table .info { padding:0; color:#000; }
+.ec-base-tooltip table p.info:before,
+.ec-base-tooltip table ul.info li:before { display:inline-block; content:""; margin:0 3px 0 0; width:4px; height:1px; background:#000; vertical-align:middle; }
+.ec-base-tooltip .info { padding:10px 10px 0; margin:5px 0 0; }
+.ec-base-tooltip p.bullet,
+.ec-base-tooltip ul.bullet { margin:8px 10px; }
+.ec-base-tooltip p.bullet,
+.ec-base-tooltip ul.bullet li { padding:0 0 0 5px; background:url("http://img.echosting.cafe24.com/skin/base/common/ico_function.gif") no-repeat 0 5px; }
+.ec-base-tooltip ul.bullet li { line-height:1.5em; }
+.ec-base-tooltip .txtEm { color:#000; }
