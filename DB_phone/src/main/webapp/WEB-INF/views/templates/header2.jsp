@@ -14,10 +14,10 @@
 
 			<!--로그인메뉴-->
 			<li class="login_menu" module="Layout_statelogoff">
-				<a href="/member/login.html">login</a> / <a href="/member/join.html">join us</a>
+				<a href="${pageContext.request.contextPath}/member/login">login</a> / <a href="${pageContext.request.contextPath}/member/create">join us</a>
 			</li>
 			<li class="login_menu" module="Layout_stateLogon">
-				<a href="{$action_logout}">logout</a> / <a href="/member/modify.html">my info</a>
+				<a href="${pageContext.request.contextPath}/member/lgout">logout</a> / <a href="/member/modify.html">my info</a>
 			</li>
 			<li class="login_menu">
 				<a href="/myshop/index.html">my page</a> / 
@@ -234,9 +234,9 @@
 	        </ul>
 	        <ul>
 	            <h2>MEMBERS</h2>
-	            <li module="Layout_statelogoff"><a href="/member/login.html" class="first">login</a></li>     
-	            <li module="Layout_statelogoff"><a href="/member/join.html">join us</a></li>     
-	            <li module="Layout_stateLogon"><a href="{$action_logout}" class="first">logout</a></li>
+	            <li module="Layout_statelogoff"><a href="${pageContext.request.contextPath}/member/loginForm.jsp" class="first">login</a></li>     
+	            <li module="Layout_statelogoff"><a href="${pageContext.request.contextPath}/member/createForm.jsp">join us</a></li>     
+	            <li module="Layout_stateLogon"><a href="${pageContext.request.contextPath}/member/logout.jsp" class="first">logout</a></li>
 	            <li module="Layout_stateLogon"><a href="/member/modify.html">my info</a></li>
 	            <li><a href="/order/basket.html" module="Layout_orderBasketcount">basket <span>{$basket_count}</span></a></li>
 	            <li><a href="<!--@import(/layout/mosen/layout_delivery_url.html)-->" target="_blank">delivery</a></li>

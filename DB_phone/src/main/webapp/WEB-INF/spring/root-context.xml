@@ -41,10 +41,11 @@
 		<property name="dataSource" ref="dataSource" />
 		<!-- 아래부분은 매핑할 xml파일이 있는 패키지경로를 설정한다. -->
 		<property name="typeAliasesPackage" value="www.DBphone" />
+		<!-- <property name="configLocation" value="classpath:/blog.xml"></property> -->
 		<property name="mapperLocations" value="classpath:mybatis/*.xml" />
 	</bean>
 
-	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 

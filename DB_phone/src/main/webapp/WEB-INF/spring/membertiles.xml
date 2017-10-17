@@ -4,6 +4,64 @@
     "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 
 <tiles-definitions>
-	<definition name="/" extends="main">
+	<definition name="main" template="/WEB-INF/views/templates/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/templates/header2.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/templates/side.jsp" />
 	</definition>
+  
+   <definition name="/member/list" extends="main">
+      <put-attribute name="title" value="member 목록"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/list.jsp" />
+   </definition>
+   <definition name="/member/create" extends="main">
+      <put-attribute name="title" value="member 가입"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/createForm.jsp" />
+   </definition>
+   <definition name="/member/createProc" extends="main">
+      <put-attribute name="title" value="member 생성"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/createProc.jsp" />
+   </definition>
+      <definition name="/member/prcreateProc" extends="main">
+      <put-attribute name="title" value="중복확인 페이지"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/prcreateProc.jsp" />
+   </definition>
+   <definition name="/member/update" extends="main">
+      <put-attribute name="title" value="member 수정"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/updateForm.jsp" />
+   </definition>
+     <definition name="/member/update" extends="main">
+      <put-attribute name="title" value="member 수정"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/updateProc.jsp" />
+   </definition>
+   <definition name="/member/delete" extends="main">
+      <put-attribute name="title" value="member 삭제"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/deleteForm.jsp" />
+   </definition>
+    <definition name="/member/delete" extends="main">
+      <put-attribute name="title" value="member 삭제"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/deleteProc.jsp" />
+   </definition>
+      <definition name="/member/login" extends="main">
+      <put-attribute name="title" value="member 로그인"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+   </definition>
+   <definition name="/member/loginProc" extends="main">
+      <put-attribute name="title" value="member 로그인 처리"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/loginProc.jsp" />
+   </definition>
+  
+   <definition name="/member/read" extends="main">
+      <put-attribute name="title" value="member조회"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/read.jsp" />
+   </definition>
+   
+     <definition name="/member/updatePasswProc" extends="main">
+      <put-attribute name="title" value="수정완료"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/updatePasswdProc.jsp" />
+   </definition>
+   <definition name="/member/updatePassw" extends="main">
+      <put-attribute name="title" value="비번 수정"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/member/updatePasswdForm.jsp" />
+   </definition>
+   
 </tiles-definitions> 

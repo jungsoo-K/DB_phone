@@ -4,6 +4,27 @@
     "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 
 <tiles-definitions>
-	<definition name="/" extends="main">
+	<definition name="main" template="/WEB-INF/views/templates/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/templates/header2.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/templates/side.jsp" />
 	</definition>
+  
+   <definition name="/cart/list" extends="main">
+      <put-attribute name="title" value="cart 목록"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/list.jsp" />
+   </definition>
+   <definition name="/cart/create" extends="main">
+      <put-attribute name="title" value="cart 생성"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/createForm.jsp" />
+   </definition>
+   <definition name="/cart/update" extends="main">
+      <put-attribute name="title" value="cart 수정"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/updateForm.jsp" />
+   </definition>
+   <definition name="/cart/delete" extends="main">
+      <put-attribute name="title" value="cart 삭제"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/deleteForm.jsp" />
+   </definition>
+  
+   
 </tiles-definitions> 
