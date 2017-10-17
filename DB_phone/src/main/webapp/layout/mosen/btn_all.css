@@ -1,0 +1,5 @@
+.btn_style01 { padding:10px 20px 10px 20px;font-size:11px; font-weight:normal;min-width:50px;text-align:center;line-height:12px;height:12px;}
+.btn_style01:hover {}
+
+.btn_gray {background:#ebebeb;color:#555;border:1px solid #ccc;}
+.btn_gray:hover {background:#ccc;color:#555;border:1px solid #ccc;}

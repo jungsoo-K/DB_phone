@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+
+	<select id="total" resultType="int" parameterType="Map">
+		select count(*) from look_member
+		<where>
+			<if test="col=='id'">
+				id like '%'||#{word}||'%'
+			</if>
+			<if test="col=='mname'">
+				mname like '%'||#{word}||'%'
+			</if>
+			<if test="col=='email'">
+				email like '%'||#{word}||'%'
+			</if>
+		</where>
+	</select>
+
+	<select id="list" resultType="MemberDTO" parameterType="Map">
+		select id,mname,phone,email from look_member
+		<where>
+			<if test="col=='id'">
+				id like '%'||#{word}||'%'
+			</if>
+			<if test="col=='mname'">
+				mname like '%'||#{word}||'%'
+			</if>
+			<if test="col=='email'">
+				email like '%'||#{word}||'%'
+			</if>
+		</where>
+	</select>
+
+	<insert id="create" parameterType="MemberDTO">
+		insert into
+		look_member(id,mname,phone,email,zipcode,address1,address2,passwd)
+		values(#{id},#{mname},#{phone},#{email},#{zipcode},#{address1},#{address2},#{passwd})
+	</insert>
+
+	<select id="read" resultType="MemberDTO" parameterType="String">
+		select *
+		from look_member
+		where id=#{id}
+	</select>
+
+	<update id="update" parameterType="MemberDTO">
+		update look_member set
+		phone=#{phone},
+		email=#{email},
+		zipcode=#{zipcode},
+		address1=#{address1},
+		address2=#{address2}
+		where id = #{id}
+	</update>
+
+	<update id="updatepasswd" parameterType="MemberDTO">
+		update look_member set
+		passwd=#{passwd}
+		where id=#{id}
+	</update>
+
+	<delete id="delete" parameterType="String">
+		delete from look_member
+		where
+		id = #{id}
+	</delete>
+
+	<select id="idCheck" resultType="int" parameterType="String">
+		select
+		count(*) from look_member
+		where id =#{id}
+	</select>
+
+	<select id="emailCheck" resultType="int" parameterType="String">
+		select
+		count(*) from look_member
+		where email =#{email}
+	</select>
+
+	<select id="loginCheck" resultType="int" parameterType="Map">
+		select
+		count(*) from look_member
+		where id = #{id}
+		and passwd = #{passwd}
+	</select>
+
+	<select id="getGrade" resultType="String" parameterType="String">
+		select
+		grade from look_member
+		where id=#{id}
+	</select>
+
+
+</mapper>
