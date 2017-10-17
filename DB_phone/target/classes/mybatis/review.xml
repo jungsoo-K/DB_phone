@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="review">
+
+	<insert id="revCreate" parameterType="reviewDTO">
+		insert into review(password, rtitle, rcontent, rimage, rdate, indent, grpno, id, pcode)
+		values( #{password} ,#{rtitle}, #{rcontent}, #{rimage}, sysdate(), #{indent}, #{grpno}+1, #{id}, #{pcode});
+	</insert>
+
+
+	<delete id="revDelete" parameterType="int">
+		DELETE FROM review WHERE recode = #{recode}
+	</delete>
+
+
+	<update id="revUpdate" parameterType="reviewDTO">
+		 UPDATE review  
+		 SET rtitle= #{rtitle}, rcontent= #{rcontent}, rimage= #{rimage}  
+		 WHERE recode = #{recode}
+ 
+	</update>	
+
+
+	<select id="revRead" resultType="reviewDTO" parameterType="int">
+		SELECT recode, rtitle, rcontent, rimage, rdate, indent, grpno, r.id
+		FROM review as r
+		inner join look_member as m
+		on r.id = m.id                                                
+		WHERE recode = #{recode}      
+	</select>
+	
+	
+	<select id="revList" resultType="reviewDTO" parameterType="Map">
+   		select recode, rtitle, rcontent, r.id
+		from review as r
+		inner join look_member as m
+		on r.id = m.id                                                                 
+	                                                                          
+	    ORDER BY grpno DESC, limit 0,5                                              
+        
+                                                       
+  </select>
+  
+  	<select id="revPasswordCheck" resultType="int" parameterType="Map">
+  		select count(*) from review
+  		where recode = #{recode} and password = #{password}
+  	
+  	</select>
+  	
+  	<select id="revTotal" resultType="int" parameterType="Map">
+  		select count(*) from review
+  	
+  	</select>
+	
+
+</mapper>

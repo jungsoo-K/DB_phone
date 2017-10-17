@@ -14,14 +14,24 @@
 	<bean id="QnAdao" class="www.DBphone.QnA.QnADAO" p:mybatis-ref="sqlSession" />
 	<bean id="rdao" class="www.DBphone.review.ReviewDAO" p:mybatis-ref="sqlSession" />
 
-	<!-- Database Connection Settings -->
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-		p:driverClassName="org.gjt.mm.mysql.Driver"
-		p:url="jdbc:mysql://172.16.3.29:3306/DB_phone?useUnicode=true&amp;characterEncoding=euckr"
-		p:username="root"
-		p:password="1234"
-		p:maxActive="2"
-		p:maxIdle="1" />
+<!-- 	 Database Connection Settings --> 
+<!-- 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" -->
+<!-- 		p:driverClassName="org.gjt.mm.mysql.Driver" -->
+<!-- 		p:url="jdbc:mysql://172.16.3.29:3306/DB_phone?useUnicode=true&amp;characterEncoding=euckr" -->
+<!-- 		p:username="root" -->
+<!-- 		p:password="1234" -->
+<!-- 		p:maxActive="2" -->
+<!-- 		p:maxIdle="1" /> -->
+
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+      p:driverClassName="org.gjt.mm.mysql.Driver"
+      p:url="jdbc:mysql://localhost:3306/javadb?useUnicode=true&amp;characterEncoding=euckr"
+      p:username="root"
+      p:password="1234"
+      p:maxActive="2"
+      p:maxIdle="1" />
+
+
 		
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />

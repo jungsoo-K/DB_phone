@@ -215,7 +215,7 @@
 	        </ul>
 	        <ul module="Layout_category">
 	            <h2>STORE</h2>
-	            <li><a href="/product/list2.html{$param}" class="h1">{$name_or_img_tag}</a></li>
+	            <li><a href="../review/list.jsp" class="h1">리뷰테스트</a></li>
 				<li><a href="/product/list.html{$param}" class="h1">{$name_or_img_tag}</a></li>
 				<li><a href="/product/list.html{$param}" class="h1">{$name_or_img_tag}</a></li>
 	        </ul>
