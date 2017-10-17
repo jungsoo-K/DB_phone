@@ -4,6 +4,33 @@
     "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 
 <tiles-definitions>
-	<definition name="/" extends="main">
+	<definition name="main" template="/WEB-INF/views/templates/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/templates/header2.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/templates/side.jsp" />
 	</definition>
+	<definition name="/notice/list" extends="main">
+		<put-attribute name="title" value="notice 목록"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/notice/list.jsp" />
+	</definition>
+<!-- 	<definition name="/notice/create" extends="main"> -->
+<!-- 		<put-attribute name="title" value="notice 생성"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/notice/createForm.jsp" /> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="/notice/update" extends="main"> -->
+<!-- 		<put-attribute name="title" value="notice 수정"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/notice/updateForm.jsp" /> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="/notice/delete" extends="main"> -->
+<!-- 		<put-attribute name="title" value="notice 삭제"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/notice/deleteForm.jsp" /> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="/notice/reply" extends="main"> -->
+<!-- 		<put-attribute name="title" value="notice 답변"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/notice/replyForm.jsp" /> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="/notice/read" extends="main"> -->
+<!-- 		<put-attribute name="title" value="notice 조회"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/notice/read.jsp" /> -->
+<!-- 	</definition> -->
+	
 </tiles-definitions> 

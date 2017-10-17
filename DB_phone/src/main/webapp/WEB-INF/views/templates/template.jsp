@@ -8,6 +8,8 @@
     <meta name="format-detection" content="telephone=no" />
 	<title><tiles:getAsString name="title"/></title>
 	
+	<link href='${pageContext.request.contextPath}/css/layout.css' rel='stylesheet' type='text/css'>
+	
 	<link href='${pageContext.request.contextPath}/css/module/layout/searchHeader.css' rel='stylesheet' type='text/css'>
 	<link href='${pageContext.request.contextPath}/css/tuxedo-menu.css' rel='stylesheet' type='text/css'>
 	<link href='${pageContext.request.contextPath}/css/common.css' rel='stylesheet' type='text/css'>
@@ -47,8 +49,13 @@
 	<script src="${pageContext.request.contextPath}/js/mosen_category.js"></script>
 </head>
 <body leftmargin="0" topmargin="0">
-	<tiles:insertAttribute name ="header" /> 
-	<tiles:insertAttribute name ="body" /> 
-	<tiles:insertAttribute name ="side" /> 
+
+    <header id="sidemenu">
+        <tiles:insertAttribute name="header" />
+    </header>
+         
+    <section id="site-content">
+        <tiles:insertAttribute name="body" />
+    </section>
 </body>
 </html>

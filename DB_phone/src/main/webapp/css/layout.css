@@ -1,0 +1,25 @@
+#sidemenu {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    z-index: 20;
+    position: fixed;
+    left: 0px;
+    margin-top:
+}
+
+#site-content {
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    z-index: 20;
+    position: fixed;
+    min-height: 600px;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-left:20%;
+    padding-left:10px;
+}
+    
