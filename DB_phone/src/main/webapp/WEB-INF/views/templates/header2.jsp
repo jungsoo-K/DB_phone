@@ -9,7 +9,7 @@
 
 			<!--메인로고메뉴-->
 			<li class="logo">
-				<a href="/home.jsp"><img src="${pageContext.request.contextPath}/images/logo.png"  alt="" /></a>
+				<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/images/logo.png"  alt="" /></a>
 			</li>
 
 			<!--로그인메뉴-->
@@ -17,10 +17,10 @@
 				<a href="${pageContext.request.contextPath}/member/login">login</a> / <a href="${pageContext.request.contextPath}/member/create">join us</a>
 			</li>
 			<li class="login_menu" module="Layout_stateLogon">
-				<a href="${pageContext.request.contextPath}/member/lgout">logout</a> / <a href="/member/modify.html">my info</a>
+				<a href="${pageContext.request.contextPath}/member/lgout">logout</a> / <a href="${pageContext.request.contextPath}/member/read">my info</a>
 			</li>
 			<li class="login_menu">
-				<a href="/myshop/index.html">my page</a> / 
+				<a href="${pageContext.request.contextPath}/mypage/mypage">my page</a>  
 				<a href="/order/basket.html" module="Layout_orderBasketcount">
 					basket<span>({$basket_count})</span>
 				</a>

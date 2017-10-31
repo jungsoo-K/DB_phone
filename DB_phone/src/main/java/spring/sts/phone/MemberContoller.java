@@ -42,6 +42,10 @@ public class MemberContoller {
 		model.addAttribute("flag", dao.emailCheck(email));
 		return "/member/email_proc";
 	}
+	   @RequestMapping("member/email_form")
+	   public String emailCheck() {
+	      return "member/email_form";
+	   }
 
 	@RequestMapping("/member/create")
 	public String create() {
@@ -210,5 +214,12 @@ public class MemberContoller {
 		session.invalidate();
 		return "redirect:/";
 	}
+	@RequestMapping("/mypage/mypage")
+	public String mypage() {
+		
+		return "/mypage/mypage";
+	}
+
+	
 
 }

@@ -16,15 +16,27 @@
    <definition name="/cart/create" extends="main">
       <put-attribute name="title" value="cart 생성"></put-attribute>
       <put-attribute name="body" value="/WEB-INF/views/cart/createForm.jsp" />
+   </definition>   <definition name="/cart/create" extends="main">
+      <put-attribute name="title" value="cart 생성"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/createProc.jsp" />
    </definition>
    <definition name="/cart/update" extends="main">
       <put-attribute name="title" value="cart 수정"></put-attribute>
       <put-attribute name="body" value="/WEB-INF/views/cart/updateForm.jsp" />
    </definition>
+      <definition name="/cart/update" extends="main">
+      <put-attribute name="title" value="cart 수정"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/updateProc.jsp" />
+   </definition>
    <definition name="/cart/delete" extends="main">
       <put-attribute name="title" value="cart 삭제"></put-attribute>
       <put-attribute name="body" value="/WEB-INF/views/cart/deleteForm.jsp" />
    </definition>
+      <definition name="/cart/delete" extends="main">
+      <put-attribute name="title" value="cart 삭제"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/cart/deleteProc.jsp" />
+   </definition>
+ 
   
    
 </tiles-definitions> 

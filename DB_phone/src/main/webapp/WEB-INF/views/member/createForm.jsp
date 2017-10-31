@@ -137,7 +137,7 @@ function idCheck(id){
 		var url ="id_proc";
 		url +="?id="+id;
 		
-		wr = window.open(url,"아이디검색","width=400,height=400");
+		wr = window.open(url,"아이디검색","width=400,height=300");
 		wr.moveTo((window.screen.width-400)/2,(window.screen.height-400)/2);
 	}
 }
@@ -149,7 +149,7 @@ function idCheck(id){
 			var url ="email_proc";
 			url +="?email="+email;
 			
-			wr = window.open(url,"이메일검색","width=400,height=400");
+			wr = window.open(url,"이메일검색","width=400,height=300");
 			wr.moveTo((window.screen.width-400)/2,(window.screen.height-400)/2);
 		}
 		

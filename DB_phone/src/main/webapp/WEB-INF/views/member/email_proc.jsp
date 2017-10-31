@@ -12,6 +12,22 @@
   font-family: gulim; 
   font-size: 20px; 
 } 
+.content{
+  margin: 0 auto;            
+  border-color: #AAAAAA;    
+  border-width: 1px;       
+  border-style: solid;       
+  border-collapse: collapse; 
+ 
+}
+.bottom{
+  margin: 0 auto;            
+  border-color: #AAAAAA;    
+  border-width: 1px;       
+  border-style: solid;       
+  border-collapse: collapse; 
+}
+
 </style> 
 <script type="text/javascript">
 function use(){
@@ -44,7 +60,7 @@ function use(){
 
   
   <DIV class='bottom'>
-    <input type='button' value='다시시도' onclick="location.href='email_proc.do'">
+    <input type='button' value='다시시도' onclick="location.href='./email_proc'">
     <input type='button' value='닫기' onclick="window.close()">
   </DIV>
 
